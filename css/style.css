@@ -1,0 +1,722 @@
+
+:root {
+    --ouro: #b5945d;
+    --preto: #000000;
+    --branco: #ffffff;
+    --cinza-suave: #f9f9f9;
+    --fonte-serif: 'Playfair Display', serif;
+    --fonte-sans: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-sans);
+    color: var(--preto);
+    line-height: 1.6;
+}
+
+/* CABEÇALHO  */
+.cabecalho-principal {
+    background-color: var(--branco);
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container-menu {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logotipo h1 {
+    font-family: var(--fonte-serif);
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    color: var(--ouro);
+    line-height: 1;
+}
+
+.logotipo span {
+    font-size: 0.6rem;
+    letter-spacing: 4px;
+    display: block;
+    color: var(--preto);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.navegacao-principal ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.navegacao-principal a {
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navegacao-principal a:hover {
+    color: var(--ouro);
+}
+
+.botao-busca {
+    background: none;
+    border: 1px solid var(--preto);
+    padding: 8px 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* VÍDEO DE ENTRADA*/
+.porta-entrada {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-fundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.camada-escura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.conteudo-entrada {
+    max-width: 1400px;
+    margin: 0;
+    padding: 0 80px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left;
+    z-index: 2;
+}
+.lema-aura {
+    align-self: flex-start;
+}
+
+
+.lema-aura {
+    font-size: clamp(3rem, 10vw, 5.5rem);
+    font-weight: 900;
+    line-height: 0.85;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    color: #b5945d;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: var(--ouro);
+    margin-top: 20px;
+    color: #f5f2f2;
+}
+
+/* --- SEÇÃO HISTÓRIA --- */
+.secao-historia {
+    padding: 120px 40px;
+    background-color: var(--branco);
+}
+
+.container-historia {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.imagens-historia {
+    position: relative;
+    width: 500px;
+    height: 550px;
+    flex-shrink: 0;
+}
+
+.imagens-historia img {
+    position: absolute;
+    object-fit: cover;
+    display: block;
+}
+
+.foto-maior {
+    width: 400px !important;
+    height: 500px !important;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #eee;
+}
+
+.foto-menor {
+    width: 280px !important;
+    height: 380px !important;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    border: 15px solid var(--branco);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    background-color: #ddd;
+}
+
+.titulo-sessao {
+    font-family: var(--fonte-serif);
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.paragrafo-historia {
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.link-historia {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 700;
+    border-bottom: 2px solid var(--ouro);
+    padding-bottom: 5px;
+}
+
+/* GRADE DE REVISTA */
+.grade-revista {
+    max-width: 1400px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 80px;
+    padding: 0 40px;
+}
+
+.artigo-principal {
+    display: flex;
+    flex-direction: column; 
+}
+
+.moldura-imagem {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.moldura-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.etiqueta {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--ouro);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.titulo-destaque {
+    font-family: var(--fonte-serif);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.resumo {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.acoes-artigo {
+    display: flex;
+    gap: 20px;
+}
+
+.botao-ler, .botao-compra {
+    padding: 15px 35px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-ler {
+    border: 1px solid var(--preto);
+    color: var(--preto);
+}
+
+.botao-ler:hover {
+    background: var(--preto);
+    color: var(--branco);
+}
+
+.botao-compra {
+    background: var(--ouro);
+    color: var(--branco);
+}
+
+/* --- BARRA LATERAL --- */
+.barra-lateral {
+    border-left: 1px solid #eeeeee;
+    padding-left: 50px;
+}
+
+.artigo-secundario {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.artigo-secundario:last-child {
+    border: none;
+}
+
+.artigo-secundario h3 {
+    font-family: var(--fonte-serif);
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.artigo-secundario p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+.card-editorial {
+    background: #fff;
+    max-width: 350px;
+}
+
+.porta-entrada-brasil {
+    position: relative;
+    height: 85vh; /* Quase a tela toda para dar impacto */
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: flex-start; /* Alinha o texto na ESQUERDA */
+    overflow: hidden;
+}
+
+.img-container-brasil {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+}
+
+.img-fundo-brasil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a foto preencha tudo sem achatar */
+    object-position: center;
+}
+
+/* Camada de escurecimento degradê (mais chique que cor sólida) */
+.overlay-editorial {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+    z-index: 2;
+}
+
+.conteudo-entrada-editorial {
+    position: relative;
+    z-index: 3;
+    padding-left: 80px; /* Recuo lateral para o texto não colar na borda */
+    max-width: 700px;
+    color:#b5945d;
+}
+
+.etiqueta-brasil {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--ouro); /* Um detalhe em dourado aqui fica chique */
+    margin-bottom: 15px;
+    display: block;
+}
+
+.titulo-brasil {
+    --fonte-serif: 'Playfair Display', serif;
+    --fonte-sans: 'Inter', sans-serif;
+    font-size: 5.5rem; /* Grande como uma manchete */
+   titulo-brasil-ouro {
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    color: #b5945d; /* Seu dourado da paleta */
+    line-height: 0.9;
+    margin-bottom: 20px;
+    
+    /* O SEGREDO: Uma sombra interna e externa para dar leitura */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.3), /* Sombra suave para destacar do fundo claro */
+        0px 0px 15px rgba(181, 148, 93, 0.2); /* Um brilho dourado sutil em volta */
+    
+    /* Refino extra */
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+/* Ajuste na Camada Escura para o Dourado brilhar */
+}
+
+.subtitulo-brasil {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: lowercase; /* Estilo editorial minimalista */
+    border-left: 2px solid var(--branco);
+    padding-left: 20px;
+}
+.secao-manifesto-br {
+    padding: 100px 80px;
+    background-color: #fcfcfc; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-manifesto {
+    max-width: 1200px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.label {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: #888;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.col-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #000;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.col-texto p {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.link-explorar {
+    text-decoration: none;
+    color: #b5945d; /
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.col-imagem-detalhe img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: grayscale(30%); 
+}
+
+
+
+
+.vitrine-brasil {
+    padding: 100px 40px;
+    background-color: #ffffff;
+}
+
+.cabecalho-vitrine {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.cabecalho-vitrine h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card-produto {
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.imagem-wrapper {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.imagem-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+/* Efeito de zoom na imagem ao passar o mouse */
+.card-produto:hover .imagem-wrapper img {
+    transform: scale(1.05);
+}
+
+.tag-tecnologia {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 5px 12px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.info-produto {
+    padding: 20px 0;
+    text-align: left;
+}
+
+.info-produto h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.preco {
+    color: var(--ouro);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.btn-adicionar {
+    margin-top: 15px;
+    background: none;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-adicionar:hover {
+    background: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rodape-aura {
+    background-color: #0e0e0e; /* Um preto levemente suavizado como na imagem */
+    padding: 60px 40px 30px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Links do Topo do Rodapé */
+.container-superior-rodape {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; /* Alinha os links à direita */
+    margin-bottom: 20px;
+}
+
+.links-auxiliares a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.divisor {
+    color: #444;
+    margin: 0 15px;
+}
+
+/* Linha da Logo e Ícones */
+.container-principal-rodape {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+    padding-bottom: 40px;
+}
+
+.logo-aura {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem; /* Logo bem grande como na Bazaar */
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.sub-logo {
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+    display: block;
+    text-align: right;
+    margin-top: -10px;
+}
+
+/* Ícones Sociais (Círculos) */
+.sociais-e-topo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.icones-sociais {
+    display: flex;
+    gap: 12px;
+}
+
+.circulo-social {
+    width: 40px;
+    height: 40px;
+    background-color: #1a1a1a; /* Cinza bem escuro */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.circulo-social:hover {
+    background-color: #333;
+}
+
+.seta-topo {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Copyright Final */
+.copyright-bazaar {
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 30px;
+    font-size: 11px;
+    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.selo-desenvolvimento {
+    margin-top: 15px;
+    font-size: 10px;
+    color: #444;
+}
+
