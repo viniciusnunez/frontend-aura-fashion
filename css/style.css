@@ -157,7 +157,7 @@ body {
     color: #f5f2f2;
 }
 
-/* --- SEÇÃO HISTÓRIA --- */
+/*  SEÇÃO HISTÓRIA  */
 .secao-historia {
     padding: 120px 40px;
     background-color: var(--branco);
@@ -301,7 +301,7 @@ body {
     color: var(--branco);
 }
 
-/* --- BARRA LATERAL --- */
+/* BARRA LATERAL */
 .barra-lateral {
     border-left: 1px solid #eeeeee;
     padding-left: 50px;
@@ -335,7 +335,7 @@ body {
 
 .porta-entrada-brasil {
     position: relative;
-    height: 85vh; /* Quase a tela toda para dar impacto */
+    height: 85vh; /
     width: 100%;
     display: flex;
     align-items: center; /* Centraliza verticalmente */
@@ -353,11 +353,11 @@ body {
 .img-fundo-brasil {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a foto preencha tudo sem achatar */
+    object-fit: cover; 
     object-position: center;
 }
 
-/* Camada de escurecimento degradê (mais chique que cor sólida) */
+/* Camada de escurecimento degradê  */
 .overlay-editorial {
     position: absolute;
     top: 0; left: 0;
@@ -369,7 +369,7 @@ body {
 .conteudo-entrada-editorial {
     position: relative;
     z-index: 3;
-    padding-left: 80px; /* Recuo lateral para o texto não colar na borda */
+    padding-left: 80px; 
     max-width: 700px;
     color:#b5945d;
 }
@@ -378,7 +378,7 @@ body {
     font-size: 0.75rem;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: var(--ouro); /* Um detalhe em dourado aqui fica chique */
+    color: var(--ouro); 
     margin-bottom: 15px;
     display: block;
 }
@@ -386,32 +386,32 @@ body {
 .titulo-brasil {
     --fonte-serif: 'Playfair Display', serif;
     --fonte-sans: 'Inter', sans-serif;
-    font-size: 5.5rem; /* Grande como uma manchete */
+    font-size: 5.5rem;
    titulo-brasil-ouro {
     font-family: 'Playfair Display', serif;
     font-size: 6rem;
-    color: #b5945d; /* Seu dourado da paleta */
+    color: #b5945d;
     line-height: 0.9;
     margin-bottom: 20px;
     
-    /* O SEGREDO: Uma sombra interna e externa para dar leitura */
-    text-shadow: 
-        2px 2px 4px rgba(0, 0, 0, 0.3), /* Sombra suave para destacar do fundo claro */
-        0px 0px 15px rgba(181, 148, 93, 0.2); /* Um brilho dourado sutil em volta */
     
-    /* Refino extra */
+    text-shadow: 
+     2px 2px 4px rgba(0, 0, 0, 0.3), 
+    0px 0px 15px rgba(181, 148, 93, 0.2); 
+    
+    
     font-weight: 700;
     letter-spacing: -2px;
 }
 
-/* Ajuste na Camada Escura para o Dourado brilhar */
+
 }
 
 .subtitulo-brasil {
     font-size: 1.1rem;
     letter-spacing: 2px;
     font-weight: 300;
-    text-transform: lowercase; /* Estilo editorial minimalista */
+    text-transform: lowercase; 
     border-left: 2px solid var(--branco);
     padding-left: 20px;
 }
@@ -567,64 +567,19 @@ body {
     color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .rodape-aura {
-    background-color: #0e0e0e; /* Um preto levemente suavizado como na imagem */
+    background-color: #0e0e0e;
     padding: 60px 40px 30px;
     color: #ffffff;
     font-family: 'Inter', sans-serif;
 }
 
-/* Links do Topo do Rodapé */
+
 .container-superior-rodape {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end; /* Alinha os links à direita */
+    justify-content: flex-end; 
     margin-bottom: 20px;
 }
 
@@ -640,7 +595,7 @@ body {
     margin: 0 15px;
 }
 
-/* Linha da Logo e Ícones */
+
 .container-principal-rodape {
     max-width: 1400px;
     margin: 0 auto;
@@ -653,7 +608,7 @@ body {
 
 .logo-aura {
     font-family: 'Playfair Display', serif;
-    font-size: 4.5rem; /* Logo bem grande como na Bazaar */
+    font-size: 4.5rem; /* Logo grande */
     letter-spacing: -2px;
     line-height: 1;
 }
@@ -666,7 +621,7 @@ body {
     margin-top: -10px;
 }
 
-/* Ícones Sociais (Círculos) */
+
 .sociais-e-topo {
     display: flex;
     align-items: center;
@@ -681,7 +636,7 @@ body {
 .circulo-social {
     width: 40px;
     height: 40px;
-    background-color: #1a1a1a; /* Cinza bem escuro */
+    background-color: #1a1a1a; /* Cinza escuro */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -703,7 +658,7 @@ body {
     font-weight: bold;
 }
 
-/* Copyright Final */
+
 .copyright-bazaar {
     text-align: center;
     border-top: 1px solid #1a1a1a;
