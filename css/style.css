@@ -1,4 +1,6 @@
-
+/* 
+   CONFIGURAÇÕES GERAIS
+    */
 :root {
     --ouro: #b5945d;
     --preto: #000000;
@@ -25,7 +27,9 @@ body {
     line-height: 1.6;
 }
 
-/* CABEÇALHO  */
+/* 
+   CABEÇALHO
+    */
 .cabecalho-principal {
     background-color: var(--branco);
     border-bottom: 1px solid #eeeeee;
@@ -89,17 +93,18 @@ body {
     cursor: pointer;
 }
 
-/* VÍDEO DE ENTRADA*/
+/* 
+    SEÇÃO VÍDEO (HERO)
+   */
 .porta-entrada {
     position: relative;
     height: 90vh;
     width: 100%;
     overflow: hidden;
     display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
+    align-items: center;
+    justify-content: flex-start;
 }
-
 
 .video-container {
     position: absolute;
@@ -126,20 +131,13 @@ body {
 }
 
 .conteudo-entrada {
-    max-width: 1400px;
-    margin: 0;
-    padding: 0 80px; 
+    padding: 0 80px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    text-align: left;
+    align-items: flex-start;
     z-index: 2;
 }
-.lema-aura {
-    align-self: flex-start;
-}
-
 
 .lema-aura {
     font-size: clamp(3rem, 10vw, 5.5rem);
@@ -152,12 +150,13 @@ body {
 
 .tagline {
     font-size: 1.2rem;
-    color: var(--ouro);
     margin-top: 20px;
     color: #f5f2f2;
 }
 
-/*  SEÇÃO HISTÓRIA  */
+/* 
+    SEÇÃO HISTÓRIA
+   */
 .secao-historia {
     padding: 120px 40px;
     background-color: var(--branco);
@@ -178,30 +177,23 @@ body {
     flex-shrink: 0;
 }
 
-.imagens-historia img {
-    position: absolute;
-    object-fit: cover;
-    display: block;
-}
-
 .foto-maior {
-    width: 400px !important;
-    height: 500px !important;
+    width: 400px;
+    height: 500px;
     top: 0;
     left: 0;
-    z-index: 1;
-    background-color: #eee;
+    position: absolute;
+    object-fit: cover;
 }
 
 .foto-menor {
-    width: 280px !important;
-    height: 380px !important;
+    width: 280px;
+    height: 380px;
     bottom: 0;
     right: 0;
-    z-index: 2;
+    position: absolute;
     border: 15px solid var(--branco);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-    background-color: #ddd;
+    object-fit: cover;
 }
 
 .titulo-sessao {
@@ -225,439 +217,63 @@ body {
     padding-bottom: 5px;
 }
 
-/* GRADE DE REVISTA */
-.grade-revista {
-    max-width: 1400px;
-    margin: 100px auto;
+/*
+   VITRINE DE COLEÇÕES
+   */
+.vitrine-colecoes {
     display: grid;
-    grid-template-columns: 1.6fr 1fr;
-    gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
     padding: 0 40px;
+    margin: 50px 0;
 }
 
-.artigo-principal {
-    display: flex;
-    flex-direction: column; 
-}
-
-.moldura-imagem {
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.moldura-imagem img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.etiqueta {
-    font-size: 0.7rem;
-    font-weight: 800;
-    color: var(--ouro);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
-.titulo-destaque {
-    font-family: var(--fonte-serif);
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    line-height: 1;
-    margin-bottom: 20px;
-}
-
-.resumo {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.acoes-artigo {
-    display: flex;
-    gap: 20px;
-}
-
-.botao-ler, .botao-compra {
-    padding: 15px 35px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.botao-ler {
-    border: 1px solid var(--preto);
-    color: var(--preto);
-}
-
-.botao-ler:hover {
-    background: var(--preto);
-    color: var(--branco);
-}
-
-.botao-compra {
-    background: var(--ouro);
-    color: var(--branco);
-}
-
-/* BARRA LATERAL */
-.barra-lateral {
-    border-left: 1px solid #eeeeee;
-    padding-left: 50px;
-}
-
-.artigo-secundario {
-    margin-bottom: 50px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.artigo-secundario:last-child {
-    border: none;
-}
-
-.artigo-secundario h3 {
-    font-family: var(--fonte-serif);
-    font-size: 1.6rem;
-    margin: 10px 0;
-}
-
-.artigo-secundario p {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 10px;
-}
-.card-editorial {
-    background: #fff;
-    max-width: 350px;
-}
-
-.porta-entrada-brasil {
+.card-colecao {
     position: relative;
-    height: 85vh; /
-    width: 100%;
-    display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: flex-start; /* Alinha o texto na ESQUERDA */
+    height: 600px;
     overflow: hidden;
+    background: #000;
 }
 
-.img-container-brasil {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    z-index: 1;
-}
-
-.img-fundo-brasil {
+.card-colecao img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    object-position: center;
+    object-fit: cover;
+    transition: 0.5s;
+    filter: brightness(0.8);
 }
 
-/* Camada de escurecimento degradê  */
-.overlay-editorial {
+.card-colecao:hover img {
+    transform: scale(1.03);
+    filter: brightness(1);
+}
+
+.overlay-colecao {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+    bottom: 40px;
+    left: 40px;
+    color: #fff;
     z-index: 2;
 }
 
-.conteudo-entrada-editorial {
-    position: relative;
-    z-index: 3;
-    padding-left: 80px; 
-    max-width: 700px;
-    color:#b5945d;
-}
-
-.etiqueta-brasil {
-    font-size: 0.75rem;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--ouro); 
-    margin-bottom: 15px;
-    display: block;
-}
-
-.titulo-brasil {
-    --fonte-serif: 'Playfair Display', serif;
-    --fonte-sans: 'Inter', sans-serif;
-    font-size: 5.5rem;
-   titulo-brasil-ouro {
-    font-family: 'Playfair Display', serif;
-    font-size: 6rem;
-    color: #b5945d;
-    line-height: 0.9;
-    margin-bottom: 20px;
-    
-    
-    text-shadow: 
-     2px 2px 4px rgba(0, 0, 0, 0.3), 
-    0px 0px 15px rgba(181, 148, 93, 0.2); 
-    
-    
-    font-weight: 700;
-    letter-spacing: -2px;
-}
-
-
-}
-
-.subtitulo-brasil {
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    font-weight: 300;
-    text-transform: lowercase; 
-    border-left: 2px solid var(--branco);
-    padding-left: 20px;
-}
-.secao-manifesto-br {
-    padding: 100px 80px;
-    background-color: #fcfcfc; 
-    display: flex;
-    justify-content: center;
-    
-}
-
-.container-manifesto {
-    max-width: 1200px;
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-}
-
-.label {
-    font-size: 0.7rem;
-    letter-spacing: 3px;
-    color: #888;
-    display: block;
-    margin-bottom: 20px;
-}
-
-.col-texto h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    color: #000;
-    line-height: 1.1;
-    margin-bottom: 30px;
-}
-
-.col-texto p {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.8;
-    color: #444;
-    margin-bottom: 40px;
-}
-
-.link-explorar {
-    text-decoration: none;
-    color: #b5945d; /
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-}
-
-.col-imagem-detalhe img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    filter: grayscale(30%); 
-}
-
-
-
-
-.vitrine-brasil {
-    padding: 100px 40px;
-    background-color: #ffffff;
-}
-
-.cabecalho-vitrine {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.cabecalho-vitrine h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #000;
-}
-
-.grade-produtos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.card-produto {
-    position: relative;
-    transition: transform 0.4s ease;
-}
-
-.imagem-wrapper {
-    position: relative;
-    height: 450px;
-    overflow: hidden;
-    background-color: #f5f5f5;
-}
-
-.imagem-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-/* Efeito de zoom na imagem ao passar o mouse */
-.card-produto:hover .imagem-wrapper img {
-    transform: scale(1.05);
-}
-
-.tag-tecnologia {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    color: #000;
-    padding: 5px 12px;
-    font-size: 10px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.info-produto {
-    padding: 20px 0;
-    text-align: left;
-}
-
-.info-produto h3 {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
-}
-
-.preco {
-    color: var(--ouro);
-    font-weight: 700;
-    font-size: 0.9rem;
-}
-
-.btn-adicionar {
-    margin-top: 15px;
-    background: none;
-    border: 1px solid #000;
+.btn-shop {
+    color: #fff;
+    border: 1px solid #fff;
     padding: 10px 20px;
+    text-decoration: none;
     font-size: 0.7rem;
     letter-spacing: 2px;
-    cursor: pointer;
     transition: 0.3s;
 }
 
-.btn-adicionar:hover {
-    background: #000;
-    color: #fff;
-}
-
+/* 
+    RODAPÉ
+    */
 .rodape-aura {
     background-color: #0e0e0e;
     padding: 60px 40px 30px;
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
 }
-
-
-.container-superior-rodape {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end; 
-    margin-bottom: 20px;
-}
-
-.links-auxiliares a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 0.5px;
-}
-
-.divisor {
-    color: #444;
-    margin: 0 15px;
-}
-
-
-.container-principal-rodape {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: none;
-    padding-bottom: 40px;
-}
-
-.logo-aura {
-    font-family: 'Playfair Display', serif;
-    font-size: 4.5rem; /* Logo grande */
-    letter-spacing: -2px;
-    line-height: 1;
-}
-
-.sub-logo {
-    font-size: 0.7rem;
-    letter-spacing: 5px;
-    display: block;
-    text-align: right;
-    margin-top: -10px;
-}
-
-
-.sociais-e-topo {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.icones-sociais {
-    display: flex;
-    gap: 12px;
-}
-
-.circulo-social {
-    width: 40px;
-    height: 40px;
-    background-color: #1a1a1a; /* Cinza escuro */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.circulo-social:hover {
-    background-color: #333;
-}
-
-.seta-topo {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-}
-
 
 .copyright-bazaar {
     text-align: center;
@@ -669,9 +285,185 @@ body {
     text-transform: uppercase;
 }
 
-.selo-desenvolvimento {
-    margin-top: 15px;
-    font-size: 10px;
-    color: #444;
+
+
+
+
+/* 
+   SEÇÃO BRASIL
+   */
+.secao-brasil {
+    background-color: var(--branco);
+    padding: 100px 0;
 }
 
+.secao-brasil .titulo {
+    color: var(--ouro);
+    font-size: 3rem;
+}
+
+.secao-brasil .conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background-image: url('imagem.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* 
+   ESTILOS GLOBAIS AURA
+ */
+
+:root {
+    --fonte-serif: 'Playfair Display', serif;
+    --fonte-sans: 'Inter', sans-serif;
+    --preto: #000;
+    --branco: #fff;
+    --cinza: #f4f4f4;
+}
+
+body {
+    font-family: var(--fonte-sans);
+    margin: 0;
+    color: var(--preto);
+}
+
+/* ==========================================
+   CABECALHO
+   ========================================== */
+
+.cabecalho-principal {
+    padding: 40px;
+    text-align: center;
+}
+
+.logotipo h1 {
+    font-family: var(--fonte-serif);
+    letter-spacing: 5px;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logotipo span {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.navegacao-principal ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.navegacao-principal a {
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+/* ==========================================
+   INTRODUÇÃO COLEÇÃO
+   ========================================== */
+
+.intro-colecao {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro-colecao h1 {
+    font-family: var(--fonte-serif);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.resumo-colecao {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* ==========================================
+   GRADE DE PRODUTOS
+   ========================================== */
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px 40px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-produto {
+    overflow: hidden;
+}
+
+.imagem-wrapper img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.imagem-wrapper:hover img {
+    transform: scale(1.02);
+}
+
+.info-produto {
+    padding: 20px 0;
+}
+
+.info-produto h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.preco {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   BOTÃO DE COMPRA
+   ========================================== */
+
+.btn-adicionar {
+    background: transparent;
+    border: 1px solid var(--preto);
+    padding: 12px 25px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-adicionar:hover {
+    background: var(--preto);
+    color: var(--branco);
+}
+
+/* ==========================================
+   RODAPÉ
+   ========================================== */
+
+.rodape-aura {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.7rem;
+    border-top: 1px solid #eee;
+}
