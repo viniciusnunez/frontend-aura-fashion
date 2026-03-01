@@ -1,5 +1,5 @@
 /* 
-   CONFIGURAÇÕES GERAIS
+    GERAIS
     */
 :root {
     --ouro: #b5945d;
@@ -94,7 +94,7 @@ body {
 }
 
 /* 
-    SEÇÃO VÍDEO
+    VÍDEO
    */
 .porta-entrada {
     position: relative;
@@ -155,7 +155,7 @@ body {
 }
 
 /* 
-    SEÇÃO HISTÓRIA
+    HISTÓRIA
    */
 .secao-historia {
     padding: 120px 40px;
