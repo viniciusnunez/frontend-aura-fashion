@@ -94,7 +94,7 @@ body {
 }
 
 /* 
-    SEÇÃO VÍDEO (HERO)
+    SEÇÃO VÍDEO
    */
 .porta-entrada {
     position: relative;
@@ -316,7 +316,7 @@ body {
 
 
 /* 
-   ESTILOS GLOBAIS AURA
+   ESTILOS Brasil
  */
 
 :root {
@@ -333,9 +333,9 @@ body {
     color: var(--preto);
 }
 
-/* ==========================================
+/* 
    CABECALHO
-   ========================================== */
+   */
 
 .cabecalho-principal {
     padding: 40px;
@@ -370,9 +370,9 @@ body {
     letter-spacing: 2px;
 }
 
-/* ==========================================
-   INTRODUÇÃO COLEÇÃO
-   ========================================== */
+/* 
+   COLEÇÃO
+    */
 
 .intro-colecao {
     padding: 80px 20px;
@@ -393,9 +393,9 @@ body {
     color: #555;
 }
 
-/* ==========================================
+/* 
    GRADE DE PRODUTOS
-   ========================================== */
+    */
 
 .grade-produtos {
     display: grid;
@@ -436,9 +436,9 @@ body {
     margin-bottom: 20px;
 }
 
-/* ==========================================
+/* 
    BOTÃO DE COMPRA
-   ========================================== */
+   */
 
 .btn-adicionar {
     background: transparent;
@@ -457,9 +457,9 @@ body {
     color: var(--branco);
 }
 
-/* ==========================================
+/* 
    RODAPÉ
-   ========================================== */
+    */
 
 .rodape-aura {
     text-align: center;
